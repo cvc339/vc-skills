@@ -127,6 +127,12 @@ supabase/
 - Módulos planejados
 - Stack e justificativa
 
+**docs/claude-context/PLANO_EXECUCAO.md**:
+- Fases do projeto (Fundação → MVP → V1 → V2)
+- Entregas concretas por fase (checkboxes)
+- Critério de avanço entre fases
+- Este é o documento que dá continuidade entre sessões
+
 ### 6. Configurar middleware de autenticação
 
 ```typescript

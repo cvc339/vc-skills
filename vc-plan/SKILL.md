@@ -78,6 +78,61 @@ Para cada módulo:
 - Nível de multi-tenancy (N1/N2/N3)
 - Dependências de outros módulos
 
+### Fase 3b: Plano de Execução
+
+Transformar a lista de módulos em um plano concreto com fases, entregas e critérios de avanço.
+
+**Estrutura do plano:**
+
+```markdown
+## Fase 0 — Fundação (antes de qualquer feature)
+Skills: /vc-init → /vc-design → /vc-data (tabelas core)
+Entregas:
+  - [ ] Projeto criado e rodando
+  - [ ] Design system aprovado (/styleguide funcionando)
+  - [ ] Tabelas core criadas com RLS
+  - [ ] Auth funcionando (login, registro, middleware)
+  - [ ] ARCHITECTURE.md e CLAUDE.md escritos
+Critério para avançar: Build funcional, auth OK, styleguide aprovado.
+
+## Fase 1 — MVP (funcionalidade mínima para o primeiro uso real)
+Módulos: [listar]
+Entregas:
+  - [ ] [Módulo A] CRUD completo
+  - [ ] [Módulo B] Cadastro e listagem
+  - [ ] Dashboard com visão geral
+  - [ ] /vc-security: isolamento verificado
+Critério para avançar: Um usuário real consegue completar o fluxo principal.
+
+## Fase 2 — V1 (pronto para o primeiro cliente)
+Módulos: [listar]
+Entregas:
+  - [ ] [Módulo C] completo
+  - [ ] Relatórios / exportações
+  - [ ] Alertas por email
+  - [ ] /vc-security: re-verificação completa
+  - [ ] /vc-review: checklist pré-deploy aprovado
+Critério para avançar: Cliente pode usar sem acompanhamento constante.
+
+## Fase 3 — V2 (evolução pós-feedback)
+Módulos: [listar]
+Entregas:
+  - [ ] Features baseadas em feedback real
+  - [ ] Integrações
+  - [ ] Otimizações de performance
+```
+
+**Regras do plano:**
+- Cada fase tem entregas concretas (checkboxes), não descrições vagas
+- Cada fase tem critério objetivo para avançar
+- Dependências entre módulos determinam a ordem dentro da fase
+- O plano é um documento vivo — atualizar conforme o projeto evolui
+
+Documentar em: `docs/claude-context/PLANO_EXECUCAO.md`
+
+Este documento é o mapa do projeto. Ao iniciar cada sessão de trabalho,
+o Claude lê o plano e sabe onde o projeto está e o que fazer em seguida.
+
 ### Fase 4: Decisões Arquiteturais
 
 Para cada decisão técnica importante, registrar:
