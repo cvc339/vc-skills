@@ -452,5 +452,43 @@ Se forem apagadas, pedir ao Claude Code para recriá-las.
 
 ---
 
-*Este manual reflete os padrões construídos a partir da experiência real
-com o SGI-IDAL (referência de qualidade) e o ACAM (registro de problemas a evitar).*
+## Retrospectiva: a regra mais importante
+
+Ao final de cada projeto ou fase significativa, peça:
+
+```
+Você: O que aprendemos nesse projeto que deveria ir para as skills?
+```
+
+O Claude vai revisar o que foi feito, identificar o que foi difícil, o que quebrou,
+o que funcionou melhor que o esperado, e propor atualizações nas skills.
+
+**É assim que as skills evoluem.** Não por planejamento teórico, mas por experiência real.
+Cada projeto ensina algo. A retrospectiva transforma esse aprendizado em prevenção
+para o projeto seguinte.
+
+As skills são a sua memória institucional de engenharia. Sem retrospectiva,
+essa memória para de crescer.
+
+---
+
+## Reinstalação (se necessário)
+
+Se precisar reinstalar as skills:
+
+```
+As skills estão em: C:\Users\User\.claude\skills\vc-skills\
+Repositório: github.com/cvc339/vc-skills
+Para reinstalar: git clone https://github.com/cvc339/vc-skills.git ~/.claude/skills/vc-skills
+```
+
+---
+
+> *"Tudo o que é vibe coding é gerado por IA, mas nem tudo o que é gerado por IA é vibe coding."*
+> — Deborah Folloni
+
+Este manual existe para garantir que o código gerado com IA seja feito com
+a devida diligência — não no modo random, mas com padrão, planejamento e disciplina.
+
+*Construído a partir da experiência real com o SGI-IDAL (referência de qualidade)
+e o ACAM (registro de problemas a evitar). Abril/2026.*
