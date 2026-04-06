@@ -7,6 +7,63 @@
 
 ---
 
+## Passo a passo para projeto novo
+
+### 1. Criar o repositório no GitHub
+
+- Acesse **github.com/new**
+- Nome do projeto (ex: `sgi-outorgas`)
+- Visibilidade: **Private**
+- Clique **Create repository**
+- **Não** marcar README nem .gitignore (o `/vc-init` cria tudo)
+
+### 2. Clonar na pasta de projetos
+
+No Claude Code:
+```
+Você: Clona o repositório github.com/cvc339/sgi-outorgas em C:\Users\User\projetos
+```
+
+### 3. Abrir o projeto no VS Code
+
+- Abra a pasta do projeto clonado no VS Code
+- Abra o Claude Code **nessa pasta** (importante: o Claude precisa estar na pasta do projeto)
+
+### 4. Rodar as skills na sequência
+
+```
+Você: /vc-plan
+Você: [descreve o projeto, domínio, público-alvo]
+...planejamento concluído...
+
+Você: /vc-init
+...projeto criado...
+
+Você: /vc-design
+...design system criado...
+
+Você: /vc-data
+...banco modelado...
+
+[construir features]
+```
+
+### 5. Commit e push
+
+Cada commit e push vai direto para o repositório do projeto.
+O Claude faz isso quando você pede ou quando faz sentido no fluxo.
+
+### Onde cada coisa fica
+
+| O que | Onde fica |
+|---|---|
+| **Skills** (ferramentas de orientação) | `github.com/cvc339/vc-skills` → instaladas em `~/.claude/skills/` |
+| **Projeto novo** (código) | `github.com/cvc339/nome-projeto` → clonado em `C:\Users\User\projetos\nome-projeto` |
+
+**As skills orientam. O projeto é onde o código vive.** São repositórios separados.
+
+---
+
 ## O que são as vc-skills?
 
 São 9 conjuntos de instruções que orientam o Claude Code a trabalhar seguindo
