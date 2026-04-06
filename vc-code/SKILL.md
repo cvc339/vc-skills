@@ -41,6 +41,21 @@ não resolve o problema — apenas adia.
 | Decisões documentadas (05_DECISOES.md) | Contexto preservado entre sessões |
 | Componentes reutilizáveis | Mudança visual propagada automaticamente |
 
+## Antes de codificar qualquer página ou componente
+
+**Ler o design system do projeto.** Se o projeto tem `/styleguide` (ou `styles.css`
+com variáveis), toda página DEVE usar os componentes e tokens existentes.
+
+Checklist automático ao criar/modificar interface:
+1. Consultar componentes disponíveis no projeto (`/styleguide` ou `src/components/ui/`)
+2. Usar cores semânticas para status (nunca cores hardcoded)
+3. Seguir a estrutura padrão de página definida no design system
+4. Se precisar de componente que não existe: criar no design system primeiro, usar depois
+5. Consultar `CLAUDE.md` na raiz do projeto para regras específicas
+
+**Esta regra se aplica sempre que `/vc-code` for chamada, sem necessidade de
+chamar `/vc-design` separadamente.**
+
 ## Princípios (não negociáveis)
 
 ### 1. Um arquivo, uma responsabilidade
